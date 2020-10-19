@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signup</title>
+	<link rel="stylesheet" type="text/css" href="signup.css">
+	<script src="signup.js"></script>
+</head>
+<body>
+	<h1>Sign Up</h1>
+<form class="p" action="insert.php" method="post">
+<div class="row">
+<div class="label">
+<label>First Name</label>
+</div>
+<div class="input-container">
+<input type="text" id="fname" size="30" name="FirstName" class="borders" onblur="firstName('fname')">
+</div>
+<div class="errorAlign">
+	<p id="errorFname" class="error">Please enter correct First Name</p>
+	</div>
+</div>
+<div class="row">
+	<div class="label">
+<label>Last Name</label>
+</div>
+<div class="input-container"> 
+<input type="text" id="lname" size="30" name="LastName" onblur="lastName('lname')">
+</div>
+<div class="errorAlign">
+	<p id="errorLname" class="error">Please enter correct Last Name</p>
+</div>
+</div>
+<div class="row">
+	<div class="label">
+<label>User Name</label>
+</div>
+<div class="input-container"> 
+<input type="text" id="uname" size="30" name="UserName" onblur="userName('uname')">
+</div>
+<div class="errorAlign">
+	<p id="errorUname" class="error">Please enter correct User Name</p>
+</div>
+</div>
+<div class="row">
+	<div class="label">
+<label>Email</label>
+</div>
+<div class="input-container">
+<input type="text" id="email" size="30" name="Email" onblur="eMail('email')">
+</div>
+<div class="errorAlign">
+	<p id="errorEmail" class="error">Please enter correct Email</p>
+</div>
+</div>
+<div class="row">
+	<div class="label">
+<label>Phone Number</label>
+</div>
+<div class="input-container">
+<input type="text" id="phone" size="30" name="PhoneNumber" onblur="Phn('phone')">
+</div>
+<div class="errorAlign">
+	<p id="errorPhn" class="error">Please enter correct Phone Number</p>
+</div>
+</div>
+<div class="row">
+	<div class="label">
+<label>Password</label>
+</div>
+<div class="input-container">
+<input type="text" id="pswd" size="30" name="Password" onblur="Pswd('pswd')">
+</div>
+<div class="errorAlign">
+	<p id="errorPswd" class="error">Password should be 8 to 15 characters which contain at least one lowercase letter, one uppercase letter, one numeric digit, and one special character</p>
+</div>
+</div>
+<div class="row">
+	<div class="label">
+<label>Confirm Password</label>
+</div>
+<div class="input-container">
+<input type="text" id="cpswd" size="30" onblur="CPswd('cpswd')">
+</div>
+<div class="errorAlign">
+	<p id="errorCpswd" class="error">Password didnot match</p>
+</div>
+</div>
+<button class="button shadow" value="submit" type="submit">Sign Up</button>
+</form>
+</body>
+</html>
